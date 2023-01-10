@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailedInfoDokterActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="365dp"
+        android:layout_height="527dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/background2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="279dp"
+        app:layout_constraintBottom_toBottomOf="@id/bg2"
+        app:layout_constraintEnd_toEndOf="@id/bg2"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@id/bg2"
+        app:layout_constraintTop_toTopOf="@id/bg2"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/dokter_cewe1" />
+
+
+    <TextView
+        android:id="@+id/text_namaDokter"
+        android:layout_width="220dp"
+        android:layout_height="19dp"
+        android:text="Dr. Jessica Lesley"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+
+    <ImageView
+        android:id="@+id/bg3"
+        android:layout_width="318dp"
+        android:layout_height="175dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background3" />
+
+    <ImageView
+        android:id="@+id/spesialisasi"
+        android:layout_width="24dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toTopOf="@+id/bg3"
+        app:layout_constraintVertical_bias="0.207"
+        app:srcCompat="@drawable/stetoscope" />
+
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Spesialisasi       :"
+            app:layout_constraintBottom_toBottomOf="@+id/bg3"
+            app:layout_constraintEnd_toEndOf="@+id/bg3"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toStartOf="@+id/bg3"
+            app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+            app:layout_constraintVertical_bias="0.171"
+            android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/text_spesialisasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Mata"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <ImageView
+        android:id="@+id/jadwal"
+        android:layout_width="24dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toTopOf="@+id/bg3"
+        app:layout_constraintVertical_bias="0.423"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/text_jadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="10.00-14.00"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.691"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jadwal                :"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.442"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/tarif"
+        android:layout_width="24dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toTopOf="@+id/bg3"
+        app:layout_constraintVertical_bias="0.638"
+        app:srcCompat="@drawable/tarif" />
+
+    <TextView
+        android:id="@+id/text_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="Rp. 178.000"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.694"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.637" />
+
+    <TextView
+        android:id="@+id/text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarif                     :"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.651"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/lokasi_rs"
+        android:layout_width="24dp"
+        android:layout_height="31dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toTopOf="@+id/bg3"
+        app:layout_constraintVertical_bias="0.854"
+        app:srcCompat="@drawable/rumahsakit" />
+
+    <TextView
+        android:id="@+id/text_lokasiRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:text="RS Hikmah"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.674"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rumah Sakit       :"
+        app:layout_constraintBottom_toBottomOf="@+id/bg3"
+        app:layout_constraintEnd_toEndOf="@+id/bg3"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="@+id/bg3"
+        app:layout_constraintTop_toBottomOf="@+id/text_namaDokter"
+        app:layout_constraintVertical_bias="0.871"
+        android:textColor="@color/black"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

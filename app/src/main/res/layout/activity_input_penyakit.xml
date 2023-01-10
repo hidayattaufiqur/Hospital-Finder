@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.InputPenyakitActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="360dp"
+        android:layout_height="494dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/background2">
+
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="312dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/editText_penyakit"
+        app:layout_constraintVertical_bias="0.735"
+        app:srcCompat="@drawable/background3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="161dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="10dp"
+        android:text="Penyakit Yang Diderita"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.103"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:id="@+id/list_penyakit"
+        tools:listitem="@layout/items_penyakit"
+        android:layout_margin="8dp"
+        android:layout_width="208dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.734" />
+
+    <ImageView
+        android:id="@+id/search_button"
+        android:layout_width="52dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/search_button" />
+
+    <Button
+        android:id="@+id/btn_add_penyakit"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_penyakit"
+        app:layout_constraintEnd_toEndOf="@+id/editText_penyakit"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toStartOf="@+id/editText_penyakit"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.9">
+    </Button>
+
+    <EditText
+        android:id="@+id/editText_penyakit"
+        android:layout_width="296dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="536dp"
+        android:background="@drawable/search_bgr"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="1.0">
+
+    </EditText>
+</androidx.constraintlayout.widget.ConstraintLayout>

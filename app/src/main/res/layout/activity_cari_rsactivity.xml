@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CariRSActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/cari_rs_terdekat_button"
+        android:layout_width="178dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.638"
+        app:srcCompat="@drawable/carirs_terdekat_button" />
+
+    <ImageView
+        android:id="@+id/rekomendasi_rs_button"
+        android:layout_width="178dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cari_rs_terdekat_button"
+        app:layout_constraintVertical_bias="0.098"
+        app:srcCompat="@drawable/rekomendasi_rs_button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="243dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/cari_rs_terdekat_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.959"
+        app:srcCompat="@drawable/base_background" />
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/cari_rs_terdekat_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:map="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".activity.MapsActivity" />
+    </LinearLayout>
+
+    <!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:context=".MainActivity"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/background">-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="380dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="User Login"-->
+<!--                android:textSize="40dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:background="@drawable/shape_background_cute_green_rounded"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/login_image"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/taxi_white"-->
+<!--                android:transitionName="logo_image" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextEmail"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginTop="100dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/rounded_view"-->
+<!--                android:hint="Email"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:paddingStart="20dp"-->
+<!--                android:textColor="#8bd8bd"-->
+<!--                android:textColorHint="#dff2fa" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/editTextPassword"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/rounded_view"-->
+<!--                android:hint="Password"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:paddingStart="20dp"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:textColor="#8bd8bd"-->
+<!--                android:textColorHint="#dff2fa" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonLogin"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="20dp"-->
+<!--                android:background="@drawable/ronded_button1"-->
+<!--                android:text="login"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textColor="#8bd8bd" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textViewSignup"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:padding="15dp"-->
+<!--                android:text="Don't have account? Sign Up"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"-->
+<!--                android:textColor="#292826"-->
+<!--                android:textStyle="bold"/>-->
+
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressbar"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:visibility="gone" />-->
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

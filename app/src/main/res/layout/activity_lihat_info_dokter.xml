@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LihatInfoDokterActivity">
+
+    <ImageView
+        android:id="@+id/bg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="365dp"
+        android:layout_height="527dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/background2" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="349dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/search_bgr"
+        app:iconifiedByDefault="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewBg2"
+        app:layout_constraintVertical_bias="0.0"
+        app:queryHint="Search Here..." />
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewBg2"
+        android:layout_width="364dp"
+        android:layout_height="511dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <androidx.gridlayout.widget.GridLayout
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                app:columnCount="1"
+                app:rowCount="1"
+                android:layout_marginLeft="10dp"
+
+                android:padding="8dp"
+                app:alignmentMode="alignMargins"
+                app:columnOrderPreserved="false"
+                android:background="#d9d9d9"
+                android:layout_gravity="center_horizontal"
+                app:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <ListView
+                    android:id="@+id/list_dokter"
+                    android:layout_width="221dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="475dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="vertical"
+                    tools:listitem="@layout/items_dokter">
+
+                </ListView>
+
+<!--                <androidx.cardview.widget.CardView-->
+
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:elevation="5dp"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardMaxElevation="5dp"-->
+<!--                    app:layout_columnWeight="1"-->
+<!--                    app:layout_rowWeight="1"-->
+<!--                    android:padding="8dp"-->
+<!--                    app:cardBackgroundColor="#d9d9d9">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/img_d1"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            android:src="@drawable/dokter_cowo1" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/text_d1"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Dr. Andrew Callahan"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black">-->
+
+<!--                        </TextView>-->
+
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardMaxElevation="5dp"-->
+<!--                    app:layout_columnWeight="1"-->
+<!--                    app:layout_rowWeight="1"-->
+<!--                    app:cardBackgroundColor="#d9d9d9">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/img_d2"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            app:srcCompat="@drawable/dokter_cewe1" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Dr. Jessica Lesley"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black">-->
+
+<!--                        </TextView>-->
+
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardMaxElevation="5dp"-->
+<!--                    app:layout_columnWeight="1"-->
+<!--                    app:layout_rowWeight="1"-->
+<!--                    app:cardBackgroundColor="#d9d9d9"-->
+<!--                    android:layout_marginTop="60dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/img_d"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            app:srcCompat="@drawable/dokter_cewe2" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/text_d3"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Dr. Grew Barstone"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black">-->
+
+<!--                        </TextView>-->
+
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+<!--                <androidx.cardview.widget.CardView-->
+
+
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:elevation="5dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    app:cardCornerRadius="5dp"-->
+<!--                    app:cardMaxElevation="5dp"-->
+<!--                    app:layout_columnWeight="1"-->
+<!--                    app:layout_rowWeight="1"-->
+<!--                    app:cardBackgroundColor="#d9d9d9"-->
+<!--                    android:layout_marginTop="60dp">-->
+
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:orientation="vertical">-->
+
+<!--                        <ImageView-->
+<!--                            android:id="@+id/imageView5"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="180dp"-->
+<!--                            app:srcCompat="@drawable/dokter_cewe3" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="Dr. Elizabeth Hawke"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black">-->
+
+<!--                        </TextView>-->
+
+<!--                    </LinearLayout>-->
+<!--                </androidx.cardview.widget.CardView>-->
+
+
+
+            </androidx.gridlayout.widget.GridLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

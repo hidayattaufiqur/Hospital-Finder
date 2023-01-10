@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hospital Finder</string>
+    <string name="access_token">pk.eyJ1IjoiaGlkYXlhdHRhdWZpcXVyIiwiYSI6ImNsY204Y2xwczhmZmEzcXBuczh4MXo1a28ifQ.U2rqO_2gjCfepGH0iGIBgA</string>
+    <string name="fill_in_a_value">Fill in a value</string>
+    <string name="make_valid_lat">Latitude must be between -90 and 90.
+    Longitude must be between -180 and 180.</string>
+    <string name="no_results">No results</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

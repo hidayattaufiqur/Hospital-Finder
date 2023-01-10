@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LihatInfoRSActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/background1" />
+
+    <ImageView
+        android:id="@+id/bg2"
+        android:layout_width="360dp"
+        android:layout_height="494dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.496"
+        app:srcCompat="@drawable/background2">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/rs_logo"
+        android:layout_width="228dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/hospital2_logo" />
+
+    <TextView
+        android:id="@+id/nama_rs"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:text="RUMAH SAKIT &quot;Hikmah&quot;"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dokter_logo"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="@+id/rs_logo"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <TextView
+        android:id="@+id/desc_rs"
+        android:layout_width="132dp"
+        android:layout_height="62dp"
+        android:text="RS Hikmah Makassar merupakan rumah sakit yang berlokasi di Ujung Pandang, Kota Makassar."
+        android:textAlignment="viewEnd"
+        android:textColor="@color/black"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.899"
+        app:layout_constraintStart_toStartOf="@+id/rs_logo"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/heading_fasilitas_medis"
+        android:layout_width="113dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="36dp"
+        android:text="Fasilitas Medis:"
+        app:layout_constraintBottom_toTopOf="@+id/list_fasilitas_medis"
+        app:layout_constraintEnd_toStartOf="@+id/heading_fasilitas_umum"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/rs_logo"
+        app:layout_constraintVertical_bias="0.925"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/heading_fasilitas_umum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fasilitas Umum:"
+        app:layout_constraintBottom_toTopOf="@+id/list_fasilitas_umum"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.788"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/desc_rs"
+        app:layout_constraintVertical_bias="0.764"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website:"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.547"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/maps_logo"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/rs_logo"
+        app:layout_constraintVertical_bias="0.547"
+        app:srcCompat="@drawable/maps_logo" />
+
+    <ImageView
+        android:id="@+id/rute_terdekat_button"
+        android:layout_width="132dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/maps_logo"
+        app:layout_constraintVertical_bias="0.357"
+        app:srcCompat="@drawable/rute_terdekat_button" />
+
+    <ImageView
+        android:id="@+id/dokter_logo"
+        android:layout_width="136dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.727"
+        app:srcCompat="@drawable/doctor2_logo" />
+
+    <ImageView
+        android:id="@+id/list_dokter_button"
+        android:layout_width="132dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.239"
+        app:layout_constraintStart_toEndOf="@+id/rute_terdekat_button"
+        app:layout_constraintTop_toBottomOf="@+id/dokter_logo"
+        app:layout_constraintVertical_bias="0.052"
+        app:srcCompat="@drawable/list_dokter_button" />
+
+    <ListView
+        android:id="@+id/list_fasilitas_medis"
+        android:layout_width="114dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toTopOf="@+id/website"
+        app:layout_constraintEnd_toStartOf="@+id/list_fasilitas_umum"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toBottomOf="@+id/rs_logo"
+        app:layout_constraintVertical_bias="0.916" />
+
+    <ListView
+        android:id="@+id/list_fasilitas_umum"
+        android:layout_width="104dp"
+        android:layout_height="58dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg2"
+        app:layout_constraintEnd_toEndOf="@+id/bg2"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="@+id/bg2"
+        app:layout_constraintTop_toTopOf="@+id/bg2"
+        app:layout_constraintVertical_bias="0.465" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
